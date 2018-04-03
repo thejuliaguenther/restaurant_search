@@ -1,0 +1,34 @@
+Question 1: 
+
+Hi George,
+
+Thank you for reaching out. Indexing is the process of adding, updating, deleting, or manipulating the data that you want to search within an Algolia index. In Algolia, an index is similar to a  table in a database in that it holds data in a structured manner, however it is optimized to provide a fast, intuitive search experience. A record is a schemaless JSON object  stored within an index that you want to make searchable.
+
+Custom ranking goes beyond Algolia’s tie-breaking ranking for search results to provide ranking based on metrics that are most valuable to your business; once results are ranked by textual relevance, custom ranking provides a tie-breaker between records that are ranked similarly. For example, since you run a restaurant reservation platform, custom ranking might place restaurants closer to your user’s location higher in the search results or might prioritize more highly-rated or less-expensive restaurants. It’s up to you to determine which metrics might be more valuable to your user. No matter the metric that your users care about, you can set it as a priority through custom ranking. 
+
+For more information on these and other Algolia terms, you can check out our Getting Started Guide (https://www.algolia.com/doc/guides/getting-started/what-is-algolia/ ). If you want a deeper technical dive, we have a webinar on Algolia search coming up next Thursday. Let me know if you’re interested and I will show you how to sign up. Please don’t hesitate to reach out if you have any more questions. 
+
+Best,
+Julia
+
+Question 2:
+
+Hi Matt,
+
+Thank you for your feedback! We are always looking for ways to improve the product and I'll make sure to let someone from the design team know that you're experiencing this issue. Can you elaborate more on the problems you're experiencing with clearing and deleting an index? If it helps, I can set up a quick call to go over some of the new features in the dashboard. Let me know how I can help.
+
+Best,
+Julia
+
+Question 3:
+
+Hi Leo,
+
+Thank you for reaching out! Integrating Algolia into your website won’t be a lot of development work at all: Algolia’s APIs make providing an intuitive search experience simple. You can get started with our APIs with just a few lines of code in the language of your choice.
+
+I’d love to learn more about the problems you want to solve with Algolia. Would you be interested in a quick call sometime this week? I would love to give you an overview of the use cases for Algolia and show you how we can help you provide an intuitive search experience for your customers. 
+
+Best,
+Julia
+
+
