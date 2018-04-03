@@ -1,9 +1,10 @@
 from algoliasearch import algoliasearch
+import json
+import codecs
 
 client = algoliasearch.Client('QK3YR6EF4D', '7efafa747922320a9a4cc340172f87a6')
 index = client.init_index('Restaurants')
-import json
-import codecs
+
 
 def open_csv():
 	try:
@@ -28,6 +29,17 @@ def open_json():
 		# parse the data into a dictionary by ObjectID so all have O(1) lookups
 
 		for x in range(len(restaurant_json_arr)):
+			cards_set = set(restaurant_json_arr[x]['payment_options'])
+			if 'Diners Club' in cards_set:
+				cards_set.remove('Diners Club')
+				cards_set.add('Discover')
+			if 'Carte Blanche' in cards_set:
+				cards_set.remove('Carte Blanche')
+				cards_set.add('Discover')
+			if 'JCB' in cards_set:
+				cards_set.remove('JCB')
+			card_list = list(cards_set)
+			restaurant_json_arr[x]['payment_options'] = card_list
 			restaurant_dict[restaurant_json_arr[x]["objectID"]] = restaurant_json_arr[x]
 		return(restaurant_dict)
 
